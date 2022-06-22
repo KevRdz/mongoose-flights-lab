@@ -1,9 +1,9 @@
-import flights from 'mongoose'
+import mongoose from 'mongoose'
 
-flights.connect(process.env.DATABASE_URL)
+mongoose.connect(process.env.DATABASE_URL)
 	
 // shortcut to mongoose.connection object
-const db = flights.connection
+const db = mongoose.connection
 
 db.on('connected', function() {
   console.log(`Connected to MongoDB ${db.name} at ${db.host}:${db.port}`)

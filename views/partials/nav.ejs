@@ -1,10 +1,15 @@
 </head>
 <body>
   <nav>
-		<!-- <i class="fas fa-film fa-2x"></i>   -->
+		<a href="/">HOME</a>  
     <a 
       href="/flights/new" <%- title === 'Add flight' ? 'class="active"' : '' %>
     >
       ADD FLIGHT
+    </a>
+    <a 
+      href="/flights" <%- title === 'ALL flights' ? 'class="active"' : '' %>
+    >
+      ALL FLIGHTS
     </a>
   </nav>

@@ -4,7 +4,7 @@ const router = Router()
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'View All Flights' })
+  res.render('index', { title: 'Grab A Flight!!' })
 })
 
 export { 
