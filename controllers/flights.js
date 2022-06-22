@@ -7,16 +7,9 @@ function newFlight(req, res){
 }
 
 function create(req, res){
-  // req.body.nowShowing = !!req.body.nowShowing
-  // if (req.body.cast) {
-  //   req.body.cast = req.body.cast.split(", ")
-  // }
-  for (let key in req.body) {
-	if (req.body[key] === '') delete req.body[key]
-	}
   Flight.create(req.body)
   .then(flight => {
-    console.log("CREATED MOVIE:", flight)
+    console.log("CREATED FLIGHT:", flight)
     // SEND A GET REQUEST TO THIS URL!
     res.redirect(`/flights`)
   })

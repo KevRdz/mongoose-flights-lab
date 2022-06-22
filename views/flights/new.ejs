@@ -7,10 +7,10 @@
   <form id="new-form" action="/flights" method="POST">
     <label for="airline-input">Airline:</label>
     <input type="text" name="airline" id="airline-input">
-    <label for="release-year-input">Flight Number:</label>
-    <input type="text" name="releaseYear" id="release-year-input">
-    <label for="mpaa-rating-select">Airport:</label>
-    <select name="airport" id="mpaa-rating-select">
+    <label for="flightNo">Flight Number:</label>
+    <input type="text" name="flightNo" id="flightNo">
+    <label for="airport">Airport:</label>
+    <select name="airport" id="airport">
       <option value="DEN">DEN</option>
       <option value="AUS">AUS</option>
       <option value="DFW">DFW</option>
@@ -18,7 +18,7 @@
       <option value="SAN">SAN</option>
     </select>
     <label for="departs-input">Departs:</label>
-    <input type="text" name="cast" id="depart-input">
+    <input type="text" name="departs" id="depart-input">
     <!-- <label for="now-showing-checkbox">Now Showing:</label> -->
     <!-- <input type="checkbox" name="nowShowing" id="now-showing-checkbox" checked> -->
     <button type="submit">Add Flight</button>
