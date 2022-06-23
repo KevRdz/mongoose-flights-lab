@@ -35,7 +35,8 @@ const flightSchema = new Schema({
       return new Date(new Date().setFullYear(new Date().getFullYear() + 1))
     }
 },
-  tickets: [ticketSchema]
+  tickets: [ticketSchema],
+  meals: [Schema.Types.ObjectId]
 }, {
   timestamps: true,
 })
